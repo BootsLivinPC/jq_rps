@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title> JQuery R.P.S. Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+  </head>
+  <body>
+    <h1 id="title"> Welcome to Rock, Paper, Scissors... Shoot!</h1>
+    <hr/>
+    <div id="choices">
+      <div id="rock" class="choice">
+        <img src="rock.jpg" alt="Rock"/>
+      </div>
+      <div id="paper" class="choice" >
+        <img src="paper.jpg" alt="Paper"/>
+      </div>
+      <div  id="scissors" class="choice" >
+        <img src="scissors.jpg" alt="Scissors"/>
+      </div>
+    </div> 
+    <hr/>
+    <div class="results">
+      <!-- can change this texted based on result -->
+      <p id="verbal"></p>
+      <!--Shows score -->
+      <span id="usersScore">0</span> : <span id="tie"> 0 :</span><span id="compScore"> 0</span>
+    </div>
+    <hr/>
+    <div id="gameBoard">
+      <div class="box" id="userChoice" >
+      </div>
+      <div class="box" ><img id="vs" src="vs_image.jpeg" />
+      </div>
+      <div class="box" id="compChoice" >
+      </div>
+    </div>
+      
+      
+      
+      <div id="compChoices">
+          <div id="rock" class="comp">
+          <img src="rock.jpg" alt="Rock"/>
+          </div>
+          <div id="paper" class="comp" >
+          <img src="paper.jpg" alt="Paper"/>
+          </div>
+          <div  id="scissors" class="comp" >
+          <img src="scissors.jpg" alt="Scissors"/>
+          </div>
+      </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="main.js"></script>
+  </body>
+</html>

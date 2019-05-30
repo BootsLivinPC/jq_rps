@@ -1,0 +1,49 @@
+body {
+ 
+  background-color: black;
+  color: white;
+  text-align: center;
+  }
+  #choices {
+    display: flex;
+    padding: 20px;
+  }
+  
+  #game {
+    display: flex;
+    padding: 20px;
+  }
+  #compChoices {
+    display: flex;
+    padding: 20px;
+  }
+  
+  .box {
+    /* border: 5px solid green; */
+    height: 200px;
+    width: 200px;
+    padding: 20px;
+    display: flex;
+    align-content: center;
+
+  }
+  .choice {
+    /* border: 5px solid green; */
+    height: 200px;
+    width: 200px;
+    padding: 20px;
+    display: flex;
+    align-content: center;
+  }
+ 
+  
+  #gameBoard {
+    display:flex;
+    padding: 20px;
+  }
+  
+  img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+  }
