@@ -32,29 +32,29 @@ function getsCompChoice() {
       gameDraw();
       break;
     }
-    $('#compChoice').text(computer);
-    $('#userChoice').text(userChoice['id']);
+    $('#comp').text(computer);
+    $('#user').text(userChoice['id']);
 
   });
 });
 //set score board for wins losses draws
 //Not sure this is working but I think its the correct logic
 function userWins() {
-  var usersScore = 0;
-  $('#userScore').text(usersScore++) ;
+  var usersScore = [];
+  $('#userScore').text(usersScore[0]++) ;
   console.log(usersScore)//add win to user score
   
 };
   
 function compWins() {
-  var compsScore = 0;
-$('#compScore').text(compsScore++);
+  var compsScore = [];
+$('#compScore').text(compsScore[0]++);
   console.log(compScore) //add win to comp score
 };
 
 function gameDraw() {
-  var drawScore = 0;
-  $('#drawScore').text(drawScore++);
+  var drawScore = [];
+  $('#drawScore').text(drawScore[0]++);
   console.log(drawScore); //add win to draw score
 };
 
