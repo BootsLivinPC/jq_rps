@@ -4,7 +4,7 @@ function getsCompChoice() {
   var randomNumber = Math.floor(Math.random() * 3);
   return choices[randomNumber];
 }
-$('.comp').hide()
+// $('.comp').hide()
 // jq function that listens to user click on id choice
  $(document).ready( function() {
   $('.choice').on('click', function() {
@@ -16,30 +16,47 @@ $('.comp').hide()
       case "rockscissors":
       case "scissorspaper":
       case "paperrock":
-      $('#verbal').append('You Win!');
-      scoreBoard();
+      $('#verbal').text('You Win!');
+      userWins();
       break;
       case "scissorsrock":
       case "paperscissors":
       case "rockpaper":
-      $('#verbal').append('You Lost!');
+      $('#verbal').text('You Lost!');
+      compWins();
       break;
       case "rockrock":
       case "scissorsscissors":
       case "paperpaper":
-      $('#verbal').append('Draw, Play Again!');
+      $('#verbal').text('Draw, Play Again!');
+      gameDraw();
       break;
     }
     $('#compChoice').text(computer);
-    $('#userChoice').append(userChoice);
+    $('#userChoice').text(userChoice['id']);
 
   });
 });
 //set score board for wins losses draws
 //Not sure this is working but I think its the correct logic
-function scoreBoard() {
-  var userScore = [];
-$('#userScore').map(userScore, function( n ) {
-  return n + 1; //add win to board
-});
-}
+function userWins() {
+  var usersScore = 0;
+  $('#userScore').text(usersScore++) ;
+  console.log(usersScore)//add win to user score
+  
+};
+  
+function compWins() {
+  var compsScore = 0;
+$('#compScore').text(compsScore++);
+  console.log(compScore) //add win to comp score
+};
+
+function gameDraw() {
+  var drawScore = 0;
+  $('#drawScore').text(drawScore++);
+  console.log(drawScore); //add win to draw score
+};
+
+  
+ 
